@@ -1,0 +1,4 @@
+category: X11
+sdesc: "SDL Pango text rendering library (sources)"
+ldesc: "Pango is the text rendering engine of GNOME 2.x. SDL_Pango connects 
+the engine to SDL."
