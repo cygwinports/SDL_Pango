@@ -1,5 +1,5 @@
 category: X11
-requires: cygwin libSDL_Pango1 libSDL-devel libglib2.0-devel libpango1.0-devel
+requires: libSDL_Pango1 libSDL-devel libglib2.0-devel libpango1.0-devel
 external-source: SDL_Pango
 sdesc: "SDL Pango text rendering library (development)"
 ldesc: "Pango is the text rendering engine of GNOME 2.x. SDL_Pango connects 
