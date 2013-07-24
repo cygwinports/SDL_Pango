@@ -1,0 +1,19 @@
+NAME="SDL_Pango"
+VERSION=0.1.2
+RELEASE=10
+CATEGORY="Libs"
+SUMMARY="SDL Pango text rendering library"
+DESCRIPTION="Pango is the text rendering engine of GNOME 2.x. SDL_Pango
+connects the engine to SDL."
+HOMEPAGE="http://sdlpango.sourceforge.net/"
+SRC_URI="mirror://sourceforge/sdlpango/SDL_Pango-${VERSION}.tar.gz"
+PATCH_URI="http://zarb.org/~gc/t/SDL_Pango-${VERSION}-API-adds.patch"
+
+PKG_NAMES="lib${NAME}1 lib${NAME}-devel"
+libSDL_Pango1_CONTENTS='usr/bin/*-1.dll usr/share/doc/'
+libSDL_Pango_devel_REQUIRES="libSDL-devel"
+libSDL_Pango_devel_CONTENTS='usr/include/ usr/lib/'
+
+# for libtool 2.x
+WANT_AUTOMAKE=1.9
+CYGCONF_ARGS="--includedir=/usr/include/SDL"
